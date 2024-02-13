@@ -2,23 +2,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NF</title>
+    <title>main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/content/style.css">
 </head>
-
+<script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#spinner").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              ".spinner").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
 <style>
-    a {
-        color: black;
-        /*text-decoration: */
-      }
-      
-      html {
-        font-family: 'Courier New', Courier, monospace;
-      }
+    
 </style>
-
 <body>
-    <h1>github: <a href="github.com/hesmo-smm/nazi-finder">nazi-finder</a></h1>
-    <p>under development so fuck off</p>
-    <p>byyyeeeee :3</p>
+    <h1 id="honk" style="text-align: center;">Nazi-Finder</h1>
+    <div>
+        <h3 id="center">Welcome</h3>
+    </div>
+    <div class="box">
+       <p style="text-align: center;">The concept of the "Nazi Finder" is rather straightforward: if you know where Nazis reside, you can submit a request which is then reviewed. If everything appears to be in order, a marker is displayed on the map containing the details of the individual concerned.</p> 
+    </div>
+    <div class="vertical-center">
+      <button class="btn"><a href="map demo.html">Go to Map</a></button>
+      <button class="btn"><a>Request</a></button>
+    </div>
+    <div></div>
+  <!--  <div class="spinner">
+        <div></div>   
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+        <div></div>    
+      </div> -->
 </body>
 </html>
